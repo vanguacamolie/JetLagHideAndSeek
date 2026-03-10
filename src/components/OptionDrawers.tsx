@@ -238,6 +238,10 @@ export const OptionDrawers = ({ className }: { className?: string }) => {
                 hidingRadius.set(geojson.hidingRadius);
             }
 
+            if (geojson.hidingRadiusUnits !== null) {
+                hidingRadiusUnits.set(geojson.hidingRadiusUnits);
+            }
+
             if (geojson.zoneOptions) {
                 displayHidingZonesOptions.set(geojson.zoneOptions ?? []);
             }
